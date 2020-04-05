@@ -1,30 +1,28 @@
-## 20.04.03
+#### Git 초기 설정
 
-#### Git 초기 설정하기
+##### 터미널로 설정
 
-##### 1. 터미널로 설정하기
+1. repository 만들기
+  * remote repository 만들기 
+    // git-hub홈페이지
+2. local repository 만들기 
+    // 코딩할 폴더 만들기 
+  * $ mkdir GitStart
+  * $ cd Gitstart
+  * $ git config --global user.name "이름" 
+      // git commit에 사용될 username
+  * $ git config --global user.email "가입한 email" 
+      // git commit에 사용될 e-mail
+  * $ echo "GitStart" >> README.md
+      //  echo 명령어는 새로운 파일(READMD라는 마크애니 문법파일), 그 파일의 내용을 생성(GitStart)
+  * $ git init
+      // 로컬 저장소를 초기화 하는 명령어 즉, "여기가 로컬 저장소야"라고 알려주는 명령어
+  * $ git status 
+      // local repository 상태 확인
+  * $ git add README.md 
+      // 해당 파일 staged 상태로 만들기 or 깃 목록에 파일 추가
+      // git add . > 디렉토리 내 모든 파일 올리기
 
-* repository 만들기
- * remote repository 만들기 
-  // git-hub홈페이지에서 만들기
- * local repository 만들기 
-  // 코딩할 폴더 만들기 
-
-  * mkdir GitStart
-  * cd Gitstart
-  * git config --global user.name "이름" 
-    // git commit에 사용될 username
-  * git config --global user.email "가입한 email" 
-    // git commit에 사용될 e-mail
-  * echo "GitStart" >> README.md
-    //  echo 명령어는 새로운 파일(READMD라는 마크애니 문법파일), 그 파일의 내용을 생성(GitStart)
-  * git init
-    // 로컬 저장소를 초기화 하는 명령어 즉, "여기가 로컬 저장소야"라고 알려주는 명령어
-  * git status 
-    // local repository 상태 확인
-  * git add README.md 
-    // 해당 파일 staged 상태로 만들기 or 깃 목록에 파일 추가
-    // git add . > 디렉토리 내 모든 파일 올리기
 
   > Git 파일 관리 형태
   >
