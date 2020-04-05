@@ -45,6 +45,3 @@
     // local -> remote repository로 전송
     // remote repository에 master라는 branch를 생성
 
-![첫커밋](/Users/kim/Desktop/스크린샷 2020-04-05 오전 12.23.09.png)
-
-![git표시](/Users/kim/Desktop/스크린샷 2020-04-05 오전 12.23.18.png)
