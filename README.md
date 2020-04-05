@@ -4,12 +4,10 @@
 
 ##### 1. 터미널로 설정하기
 
-1.  repository 만들기
-
-* remote repository 만들기 
+* repository 만들기
+ * remote repository 만들기 
   // git-hub홈페이지에서 만들기
-
-* local repository 만들기 
+ * local repository 만들기 
   // 코딩할 폴더 만들기 
 
   * mkdir GitStart
