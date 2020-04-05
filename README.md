@@ -5,6 +5,7 @@
 ### remote repository 만들기 
     * git-hub홈페이지
 ### local repository 만들기 
+
 $ mkdir GitStart
   * 코딩할 폴더 만들기
 $ cd Gitstart
