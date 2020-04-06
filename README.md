@@ -158,5 +158,11 @@
 >  * $ git commit -m "conflict_fix"
 >  * $ git push -u origin master
 
+![스크린샷 2020-04-05 오전 11 44 08](https://user-images.githubusercontent.com/62727831/78518748-4d443100-77fc-11ea-96ee-289504e43fca.png)
+
+
+![스크린샷 2020-04-05 오전 11 43 44](https://user-images.githubusercontent.com/62727831/78518751-4e755e00-77fc-11ea-997c-de5a7815cba8.png)
+
+
 ---
 
