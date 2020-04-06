@@ -63,18 +63,39 @@
 
 ---
 
+![스크린샷 2020-04-06 오후 12 27 23](https://user-images.githubusercontent.com/62727831/78521080-a794c000-7803-11ea-8638-ce3a998df803.png)
+* open
+
+![스크린샷 2020-04-06 오후 12 27 32](https://user-images.githubusercontent.com/62727831/78521085-ab284700-7803-11ea-80c8-8262b48f2844.png)
+
+![스크린샷 2020-04-06 오후 12 27 48](https://user-images.githubusercontent.com/62727831/78521088-ae233780-7803-11ea-8caf-bc6c7d6784aa.png)
+
+* 자신의 git hub URL 삽입
+* 저는 이전에 미리 해봐서 아이디, 비밀번호 입력하는게 따로 없으나 URL 입력시 따로 입력하는 칸이 나오는데 입력하시면 됩니다.
 
 
+![스크린샷 2020-04-06 오후 12 28 51](https://user-images.githubusercontent.com/62727831/78521125-d90d8b80-7803-11ea-9226-e99cf88adc4f.png)
+
+*짜자잔
+
+![스크린샷 2020-04-06 오후 12 28 51](https://user-images.githubusercontent.com/62727831/78521242-399cc880-7804-11ea-8e7e-73214db35e09.png)
 
 
+![스크린샷 2020-04-06 오후 12 31 12](https://user-images.githubusercontent.com/62727831/78521260-45888a80-7804-11ea-9e58-8976d5c3db0e.png)
+
+* commit
 
 
+![스크린샷 2020-04-06 오후 12 33 13](https://user-images.githubusercontent.com/62727831/78521273-49b4a800-7804-11ea-97ec-5443e1c14511.png)
+
+![스크린샷 2020-04-06 오후 12 34 49](https://user-images.githubusercontent.com/62727831/78521280-4d482f00-7804-11ea-9525-85fe83bbc9bf.png)
+
+* push
 
 
+![스크린샷 2020-04-06 오후 12 35 16](https://user-images.githubusercontent.com/62727831/78521289-4faa8900-7804-11ea-8bc8-8207659556c7.png)
 
-
-
-
+* 짜자잔
 
 
 ---
