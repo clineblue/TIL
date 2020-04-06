@@ -1,43 +1,58 @@
-# 1. Git 초기 설정
+#  Git 초기 설정
 
 ---
 
-## 1.1 Mac 터미널 설정
+## 1 Mac 터미널 설정
 
 ---
 
-### remote repository 만들기 
+### 1.1 remote repository 만들기 
 
-    * git-hub홈페이지
+* Github 홈페이지
 
-### local repository 만들기 
+### 1.2 local repository 만들기 
 
-$ mkdir GitStart
- 	코딩할 폴더 만들기
-$ cd Gitstart
-$ git config --global user.name "이름" 
-	git commit에 사용될 username
-$ git config --global user.email "가입한 email" 
-	git commit에 사용될 e-mail
-$ echo "GitStart" >> README.md
-	echo 명령어는 새로운 파일(READMD라는 마크애니 문법파일), 그 파	일의 내용을 생성(GitStart)
-$ git init
-	로컬 저장소를 초기화 하는 명령어 즉, "여기가 로컬 저장소야"라고 알	려주는 명령어
-$ git status 
-	local repository 상태 확인
-$ git add README.md 
-	해당 파일 staged 상태로 만들기 or 깃 목록에 파일 추가
-	git add . > 디렉토리 내 모든 파일 올리기
-$ git commit -m "코멘트"
-	staged -> commited상태로 변환
-	local에 저장(커밋)
-$ git remote add origin https://주소
-	local과 remote repository 연결 설정
-$ git push -u origin master
-	local -> remote repository로 전송
-	remote repository에 master라는 branch를 생성
+* $ mkdir GitStart
+  * 코딩할 폴더 만들기
+* $ cd Gitstart
+
+### 1.3 remote - local repo 연결 설정
+
+* $ git config --global user.name "이름" 
+  * git commit에 사용될 username
+* $ git config --global user.email "가입한 email" 
+  * git commit에 사용될 e-mail
+* $ echo "GitStart" >> README.md
+* echo 명령어는 새로운 파일(READMD라는 마크애니 문법파일), 그 파일의 내용을 생성(GitStart)
+* $ git init
+  * 로컬 저장소를 초기화 하는 명령어 즉, "여기가 로컬 저장소야"라고 알려주는 명령어
+* $ git status 
+  * local repository 상태 확인
+* $ git add README.md 
+  * 해당 파일 staged 상태로 만들기 or 깃 목록에 파일 추가
+  * git add . > 디렉토리 내 모든 파일 올리기
+* $ git commit -m "코멘트"
+  * staged -> commited상태로 변환
+  * local에 저장(커밋)
+* $ git remote add origin https://주소
+  * local과 remote repository 연결 설정
+* $ git push -u origin master
+  * local -> remote repository로 전송
+  * remote repository에 master라는 branch를 생성
 
 ## 2.2 파이참 설정
+
+---
+
+
+
+
+
+
+
+
+
+
 
 ---
 
@@ -85,24 +100,25 @@ $ git push -u origin master
 >
 >$ git clone 사용자명@호스트:/원격/저장소/경로
 
-> ### fatal: remote origin already exists.
+> ### 오류1 : fatal: remote origin already exists.
 >
 > * 원인 : 로컬 저장소가 이미 원격 저장소와 연결되어 있는데 또 다른 원격 저장소와 연결하려고 할 때 발생
 > * 해결 : $ git remote rm origin 
 
->### 충돌오류 conflict 
+>### 오류2 : conflict error 
 >
 >! [rejected]    master -> master (fetch first)
 >error: failed to push some refs to 'https://github.com/clineblue/TIL.git'
 >
->원인 : 로컬-원격 저장소의 상태가 달라서 발생. git remote -v 로 상태 확인 후 git pull로 상태 동일하게 맞춰주기. 즉, 내 저장소가 최신 버전이 아닌 경우
->해결 : 병합(merge)작업. 다른 사람의 업데이트 이력을 내 저장소에도 갱신해야함
->$ git pull origin master
->	자동 병합
->$ vi README.md
->	편집기로 충돌된 부분 수정
->$ git add
->$ git commit -m "conflict_fix"
->$ git push -u origin master
-
-
+>* 원인 
+>  * 로컬-원격 저장소의 상태가 달라서 발생. 
+>  * git remote -v 로 상태 확인 후 git pull로 상태 동일하게 맞춰주기. 즉, 내 저장소가 최신 버전이 아닌 경우
+>* 해결
+>  * 병합(merge)작업. 다른 사람의 업데이트 이력을 내 저장소에도 갱신해야함
+>  * $ git pull origin master
+>    * 자동 병합
+>  * $ vi README.md
+>    * 편집기로 충돌된 부분 수정
+>  * $ git add
+>  * $ git commit -m "conflict_fix"
+>  * $ git push -u origin master
