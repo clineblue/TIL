@@ -129,7 +129,7 @@
 
 
 
-> ### 오류1 : fatal: remote origin already exists.
+> ### 오류1 : fatal: remote origin already exists. (git remote add 사용시)
 >
 > * 원인 : 로컬 저장소가 이미 원격 저장소와 연결되어 있는데 또 다른 원격 저장소와 연결하려고 할 때 발생
 > * 해결 : $ git remote rm origin 
@@ -140,7 +140,7 @@
 
 
 
->### 오류2 : conflict error 
+>### 오류2 : git push 충돌에러 (git push 사용시)
 >
 >! [rejected]    master -> master (fetch first)
 >error: failed to push some refs to 'https://github.com/clineblue/TIL.git'
@@ -163,6 +163,24 @@
 
 ![스크린샷 2020-04-05 오전 11 43 44](https://user-images.githubusercontent.com/62727831/78518751-4e755e00-77fc-11ea-997c-de5a7815cba8.png)
 
+
+### 오류3 : git pull 충돌에러 (git pull 사용시)
+
+>error: Your local changes to the following files would be overwritten by merge:
+>	README.md
+>Please commit your changes or stash them before you merge.
+>
+>
+>* 원인 
+>
+>   * 충돌되는 파일들이 존재. 
+>   * remote repo에서 가져오려는 소스와 현재 local에 저장된 소스가 제대로 처리되지 않아 발생
+>* 해결
+>  * Git stash 활용.
+>    * unstaged 파일들을 스택에 임시 저장하고 HEAD의 상태로 백업하는 것. 
+>    * $ git stash // 임시 저장
+>    * $ git pull // pull
+>    * $ git stash pop // 임시 저장한 것 불러오기
 
 ---
 
