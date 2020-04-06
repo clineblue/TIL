@@ -79,7 +79,7 @@
 
 ---
 
-  > ### Git 파일 관리 형태
+ ### Git 파일 관리 형태
   >
   > * 작업트리 - 인덱스 - 저장소
   >   * 인덱스에 파일 상태를 기록(stage-스테이징)
@@ -94,7 +94,7 @@
 
 
 
->  ### 브랜치
+ ### 브랜치
 >
 >  * 여러 개발자가 동시에 다양한 작업을 할 수 있게 만들어 주는 기능
 >  * 메인 브랜치에서 자신의 작업 전용 브랜치에서 작업 후 메인 브랜치에서 병합,적용
@@ -121,7 +121,7 @@
 
 
 
->### 원격 저장소 -> 로컬 저장소로 불러오기(복제 = 다운로드)
+### 원격 저장소 -> 로컬 저장소로 불러오기(복제 = 다운로드)
 >
 >$ git clone 사용자명@호스트:/원격/저장소/경로
 
@@ -129,7 +129,7 @@
 
 
 
-> ### 오류1 : fatal: remote origin already exists. (git remote add 사용시)
+### 오류1 : fatal: remote origin already exists. (git remote add 사용시)
 >
 > * 원인 : 로컬 저장소가 이미 원격 저장소와 연결되어 있는데 또 다른 원격 저장소와 연결하려고 할 때 발생
 > * 해결 : $ git remote rm origin 
@@ -140,7 +140,7 @@
 
 
 
->### 오류2 : git push 충돌에러 (git push 사용시)
+### 오류2 : git push 충돌에러 (git push 사용시)
 >
 >! [rejected]    master -> master (fetch first)
 >error: failed to push some refs to 'https://github.com/clineblue/TIL.git'
