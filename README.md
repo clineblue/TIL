@@ -10,6 +10,18 @@
 
 * Github 홈페이지
 
+#  Git 초기 설정
+
+---
+
+## 1 Mac 터미널 설정
+
+---
+
+### 1.1 remote repository 만들기 
+
+* Github 홈페이지
+
 ### 1.2 local repository 만들기 
 
 * $ mkdir GitStart
@@ -56,6 +68,8 @@
 
 
 
+
+
 ---
 
   > ### Git 파일 관리 형태
@@ -81,29 +95,20 @@
 >  * 통합 브랜치 : 언제든지 배포 가능한 버전 (모든 기능이 정상적 동작하는 상태, 즉 안정적 상태)
 >  * 토픽 브랜치 : 기능 추가나 버그 수정과 같은 단위 작업을 위한 브랜치
 
----
 
 
 
-
-
-
->  ---
->
 >  * $ git brunch "이름"
->    	브랜치 생성 
->    	브랜치 제거 $ git brunch -d "이름"
->    	ex. git brunch "error_fix"
+>    * 브랜치 생성 
+>    * 브랜치 제거 $ git brunch -d "이름"
+>    * ex. git brunch "error_fix"
 >
 >  * $ git checkout "이름"
->
->    생성한 브랜치 사용하겠다고 명시 지정
->
+>    * 생성한 브랜치 사용하겠다고 명시 지정
 >  * $ git checkout master
->    'master' 브랜치에 "HEAD"가 위치하게 전환
->
+>    * 'master' 브랜치에 "HEAD"가 위치하게 전환
 >  * $ git merge "커밋 이름"
->    메인 브랜치(master)에 통합
+>    * 메인 브랜치(master)에 통합
 
 ---
 
@@ -147,5 +152,4 @@
 >  * $ git push -u origin master
 
 ---
-
 
