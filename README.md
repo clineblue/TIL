@@ -18,6 +18,8 @@
 
 ---
 
+![스크린샷 2020-04-05 오전 12 23 09](https://user-images.githubusercontent.com/62727831/78518440-70221580-77fb-11ea-9991-27905d2c4492.png)
+
 ### 1.1 remote repository 만들기 
 
 * Github 홈페이지
@@ -51,6 +53,11 @@
 * $ git push -u origin master
   * local -> remote repository로 전송
   * remote repository에 master라는 branch를 생성
+  
+  ![스크린샷 2020-04-05 오전 12 23 18](https://user-images.githubusercontent.com/62727831/78518492-9a73d300-77fb-11ea-9817-d7825d4c400e.png)
+  
+  
+  
 
 ## 2.2 파이참 설정
 
