@@ -2,8 +2,11 @@
 
 * $ conda info --envs 
   * 가상환경 확인
+---
 
 ### 가상환경 생성시 오류 (채널 오류)
+
+![스크린샷 2020-04-08 오후 5 42 57](https://user-images.githubusercontent.com/62727831/78962592-85ff4580-7b2f-11ea-9f84-b31c6c2420d8.png)
 
 1. 배경
    * 가상환경을 새로 생성
@@ -18,8 +21,14 @@
    * conda에서 표준 채널을 통해 패키지를 사용할 수 있도록 표준 패키지 설정
 
    * $ conda config --append channels conda-forge
+   
+![스크린샷 2020-04-08 오후 5 44 49](https://user-images.githubusercontent.com/62727831/78962596-87307280-7b2f-11ea-83c2-b5aa262872bf.png)
+
+---
 
 ### pip로 패키지 설치시 오류
+
+![스크린샷 2020-04-08 오후 5 58 46](https://user-images.githubusercontent.com/62727831/78962663-c78ff080-7b2f-11ea-9e86-68499d3724f9.png)
 
 1. 배경
    * $ pip install simplejson 명령어를 통해 json을 설치하려함
@@ -27,10 +36,19 @@
 2. 원인
    * Python 버전이 낮아 설치가 불가능
    * current version :  3.4.5
+   
+   ![스크린샷 2020-04-08 오후 6 00 13](https://user-images.githubusercontent.com/62727831/78962664-c8288700-7b2f-11ea-834e-4b8b992dc9d5.png)
+   
 3. 해결
    * conda UI를 통해 임의 업그레이드 진행 
+   
+   ![스크린샷 2020-04-08 오후 6 01 01](https://user-images.githubusercontent.com/62727831/78962684-da0a2a00-7b2f-11ea-96d1-9d0af55ea48d.png)
+
+---
 
 ### 가상환경 삭제 오류
+
+![스크린샷 2020-04-08 오후 7 24 09](https://user-images.githubusercontent.com/62727831/78962726-fdcd7000-7b2f-11ea-9025-df981e0c8412.png)
 
 1. 배경
 
@@ -52,7 +70,9 @@
    * $ conda remove --name "환경 명" --all
      * 비활성화 후 다시 입력시 삭제되어짐.
 
+![스크린샷 2020-04-08 오후 7 24 55](https://user-images.githubusercontent.com/62727831/78962729-fe660680-7b2f-11ea-9374-c13f427d4001.png)
 
+---
 
 ### TIL
 
