@@ -10,14 +10,16 @@ htmlUrl = "http://www.google.com"
 savePath1 = "/Users/kim/Desktop/test1.jpg"
 savePath2 = "/Users/kim/Desktop/index.html"
 
-f = dw.urlopen(imgUrl).read()
-f2 = dw.urlopen(htmlUrl).read()
+data = dw.urlopen(imgUrl).read()
+data2 = dw.urlopen(htmlUrl).read()
 
 saveFile1 = open(savePath1, 'wb')
-saveFile1.write(f)
+saveFile1.write(data)
 saveFile1.close()
 
+# with as 구문
 with open(savePath2, 'wb') as saveFile2:
-    saveFile2.write(f2)
+      saveFile2.write(data2)
 
 print("다운로드 완료")
+
