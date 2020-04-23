@@ -12,4 +12,4 @@ savePath2 = "/Users/kim/Desktop/index.html"
 dw.urlretrieve(imgUrl, savePath1)
 dw.urlretrieve(htmlUrl, savePath2)
 print("다운로드 완료")
-
+#
