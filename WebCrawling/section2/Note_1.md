@@ -43,7 +43,7 @@ sys.stderr = io.TextIOWrapper(sys.stderr.detach(), encoding = 'utf-8')
 * urllib.error : urllib.request에서 발생하는 예외를 포함 하기 위함
 * urllib.parse : URL 구문 분석(파싱)을 위함
 * urllib.robotparser : robots.txt 파일을 구문 분석하기 위함
-
+#
 
 
 2-2-2
