@@ -17,7 +17,7 @@ saveFile1 = open(savePath1, 'wb')
 saveFile1.write(data)
 saveFile1.close()
 
-# with as 구문
+## with as 구문
 with open(savePath2, 'wb') as saveFile2:
       saveFile2.write(data2)
 
