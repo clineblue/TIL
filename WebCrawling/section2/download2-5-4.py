@@ -27,7 +27,7 @@ h1 = soup.select_one("div#main > h1")
 print('h1', h1.string)
 
 
-list_li = soup.select("div#main > ul.lecs > li")
+list_li = soup.select('div#main > ul.lecs > li')
 for i in list_li:
     print(i.string)
 # no attribute 속성이 없다.>> 얘 타임은 list임

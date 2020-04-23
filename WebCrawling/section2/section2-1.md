@@ -153,7 +153,7 @@ print('h1', h1.string)
 list_li = soup.select("div#main > ul.lecs > li")
 for i in list_li:
     print(i.string)
-# type가 list인 경우 단 1개라도 반복문을 돌려야 한다.
+# select는 list type으로 반환하기 때문에 단 1개라도 반복문을 돌려야 한다.
 ```
 
 

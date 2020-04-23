@@ -40,6 +40,6 @@ print('c', c)
 
 
 for a in links:
-    href = a.attrs['href'] #a의 속성값 즉, 링크
+    href = a.attrs["href"] #a의 속성값 즉, 링크
     txt = a.string #a의 문자열
     print('txt >> ', txt, 'href >> ', href)
