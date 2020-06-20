@@ -8,7 +8,7 @@ sys.stderr = io.TextIOWrapper(sys.stderr.detach(), encoding = 'utf-8')
 
 url = "http://finance.daum.net/"
 res = req.urlopen(url).read() # response 받기
-soup = BeautifulSoup(res, "html-parser") # 파싱
+soup = BeautifulSoup(res, "html.parser") # 파싱
 
 # print('soup', soup.prettify()) # 다음에서 받아오는지, prettify - 깔끔
 
