@@ -202,5 +202,92 @@ print(i,e.select_one("course_title").string)
 
 정신차리자~!
 
+예외처리
+---
 
+---
+
+* 예외 = 코드를 실행하는 중에 발생한 에러 
+* 사용자가 직접 에러를 발생시키는 기능으로 많이 사용하면 코드의 가독성이 떨어지니 최대한 자제.
+* 만약 10을 0으로 나눈다면 에러가 발생 ( ZeroDivisionError )
+* 예외가 발생하였음에도 스크립트 실행을 중단하지 않고 계속 실행하게 해주는 예외 처리 방법
+* 에러가 발생할 것 같은 코드를 try안에 넣고 except 뒤에 발생할 수 있는 에러의 이름을 적어두면, 에러 발생시 프로그램이 멈추지 않고 별도 처리가 가능하다.
+* 에러를 직접 일으키는 방법 - raise
+
+~~~python
+#1. try except
+try :
+#실행 코드
+except : 
+#예외 발생시 처리하는 코드
+
+#2. 특정 예외 처리
+try : 
+#실행할 코드
+except 예외이름 : 
+#예외 발생시 처리하는 코드
+
+#3. 예외의 에러 메시지 받아오기 (예외의 exception을 따서 그냥 e)
+try:
+index, x = map(int, input('인덱스와 나눌 숫자를 입력하세요: ').split())
+print(y[index] / x)
+except ZeroDivisionError as e: # as 뒤에 변수를 지정하면 에러를 받아옴
+print('숫자를 0으로 나눌 수 없습니다.', e) # e에 저장된 에러 메시지 출력
+except IndexError as e:
+print('잘못된 인덱스입니다.', e)
+
+#4. 올바른 값을 넣지 않으면 에러를 발생시키고 적당한 문구를 표시한다.
+
+def rsp(mine, yours):
+allowed = ['가위','바위', '보']
+if mine not in allowed:
+raise ValueError
+if yours not in allowed:
+raise ValueError
+
+try:
+rsp('가위', '바')
+except ValueError:
+print('잘못된 값을 넣었습니다!')
+~~~
+
+
+
+OS모듈
+---
+
+---
+
+* os 모듈 - os에서 제공하는 기본적 기능들을 모아놓은 모듈
+* os 라는 모듈 안에 path 라는 모듈. 즉, os.path 모듈 
+* dirname,exist,abspath,join,isfile,isdir 등 여러 기능들을 모아놓은 모듈
+* sys모듈도 os 모듈 안에 포함되어있음
+
+~~~python
+os.path.isdir(path) 
+#디렉토리가 존재하는지 쳌
+os.path.makedir(path)
+#디렉토리 생성
+os.path.join(path,path1,path2) 
+#path들 경로를 병합, 새 경로 생성
+
+
+~~~
+
+
+
+class
+---
+
+___
+
+1. 
+   * 객체 - 자동차
+   * 필드 ( 속성, 변수 ) - 색, 배기량, 자동(수동), 중형소형
+   * 메소드 ( 동적 - 작업을 수행 ) - 전진, 후진, 왼쪽, 오른쪽
+
+2. 클래스 생성자
+3. 파이썬에만 있는 self4
+4. 네임스페이스
+5. 클래스 변수, 인스턴스 변수 차이점
 
