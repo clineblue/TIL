@@ -1,3 +1,4 @@
+#네이버 핫토픽 출력
 from bs4 import BeautifulSoup
 import urllib.request as req
 import urllib.parse as rep
