@@ -10,7 +10,7 @@ sys.stdout = io.TextIOWrapper(sys.stdout.detach(), encoding = 'utf-8')
 sys.stderr = io.TextIOWrapper(sys.stderr.detach(), encoding = 'utf-8')
 
 base = "https://search.naver.com/search.naver?where=image&sm=tab_jum&query="
-quote = rep.quote_plus("사나")
+quote = rep.quote_plus("맥북프로")
 url = base + quote
 
 res = req.urlopen(url)
